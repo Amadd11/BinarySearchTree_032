@@ -74,6 +74,52 @@ namespace BinarySearchTree
                     currentnode = currentnode.rchild;
             }
         }
-       
+        public void inorder(node ptr)
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr == null)
+            {
+                inorder(ptr.lchild);
+                Console.WriteLine(ptr.info + " ");
+                inorder(ptr.rchild);
+            }
+        }
+        public void preorder(node ptr)
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                preorder(ptr.lchild);
+                Console.WriteLine(ptr.info + " ");
+                preorder(ptr.rchild);
+            }
+        }
+        public void postorder(node ptr)
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                postorder(ptr.lchild);
+                Console.WriteLine(ptr.info + " ");
+                postorder(ptr.rchild);
+            }
+        }
+        static void Main(string[] args)
+        {
+           
+        }
+    }       
     
 }
