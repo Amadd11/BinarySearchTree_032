@@ -28,14 +28,12 @@ namespace BinarySearchTree
 
     class BinaryTree
     {
-       
-    }
-  
-    class Program
-    {
-      
-        static void Main(string[] args)
+        public node ROOT;
+
+        public BinaryTree()
         {
+            ROOT = null; //intializing root to null
         }
-    }
+        
+    
 }
